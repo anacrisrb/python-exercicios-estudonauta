@@ -17,16 +17,16 @@ print()
 
 numero = int(input('Em que número eu pensei? '))
 
-print("PROCESSANDO...")
+print("\033[1;31;40mPROCESSANDO...\033[m")
 
 sleep(2) # Tempo de espera para o procesamento
 
 print()
 
 if numero == computador:
-    print("PARABÉÉÉÉNS!! Você VENCEU o desafio!!!")
+    print("\033[1;36;40mPARABÉÉÉÉNS!!\033[m Você VENCEU o desafio!!!")
 else:
-    print("Você PERDEU o desafio!!!")
+    print("Você \033[1;36;40mPERDEU\033[m o desafio!!!")
 
 print()
 
