@@ -3,8 +3,8 @@ Repositório criado para compartilhar os exercicios resolvidos do curso de Pytho
 
 ## 🌍 Conteúdo do curso
 
-1. Mundo 01
-2. Mundo 02
+Mundo 01 - Fundamentos 
+Mundo 02 - Estruturas de Controle 
 
 ## 🛠️ Ferramentas utilizadas
 
