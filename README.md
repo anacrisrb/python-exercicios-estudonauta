@@ -3,8 +3,8 @@ Repositório criado para compartilhar os exercicios resolvidos do curso de Pytho
 
 ## 🌍 Conteúdo do curso
 
-[] Mundo 01
-[] Mundo 02
+1. Mundo 01
+2. Mundo 02
 
 ## 🛠️ Ferramentas utilizadas
 
