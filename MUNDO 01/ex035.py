@@ -6,8 +6,6 @@ print("-=--=" * 5)
 print("ANALISADOR DE TRIÂNGULOS")
 print("-=--=" * 5)
 
-print()
-
 seg1 = float(input("Digite o primeiro segmento: "))
 seg2 = float(input("Digite o segundo segmento: "))
 seg3 = float(input("Digite o terceiro segmento: "))
