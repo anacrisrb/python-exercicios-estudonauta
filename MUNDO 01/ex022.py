@@ -1,4 +1,5 @@
 "Crie um programa que leia o nome completo de uma pessoa e mostre:"
+
 from itertools import count
 from os.path import split
 
@@ -11,9 +12,8 @@ nome = str(input("Digite seu nome completo: ")).strip()
 print("Seu nome em maiúsculas é {}".format(nome.upper()))
 print("Seu nome em minúsculas é", nome.lower())
 print("O seu nome tem ao todo {} letras".format(len(nome.replace(" ", ""))))
-print("O seu nome tem ao todo {} letras".format(len(nome) - nome.count(" "))) # Alternativo
+print(
+    "O seu nome tem ao todo {} letras".format(len(nome) - nome.count(" "))
+)  # Alternativo
 print("Seu primeiro nome tem {} letras".format(len(nome.split()[0])))
-print("Seu primeiro nome tem {} letras".format(nome.find(" "))) # Alternativo
-
-
-
+print("Seu primeiro nome tem {} letras".format(nome.find(" ")))  # Alternativo

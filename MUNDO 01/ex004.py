@@ -1,15 +1,13 @@
 """Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo
 e todas as informações possíves sobre ele."""
 
-dado = input('Digite algo: ')
+dado = input("Digite algo: ")
 
-print('O tipo primitivo desse valor é: ',type(dado))
-print('Só em espaços? ', dado.isspace())
-print('É um número? ', dado.isnumeric())
-print('É alfabético? ', dado.isalpha())
-print('É alfanumérico? ',dado.isalnum())
-print('Está em maiúsculas? ',dado.isupper())
-print('Está em minúsculas? ',dado.islower())
-print('Está capitalizada(primeira letra maiúscula)? ',dado.istitle())
-
-
+print("O tipo primitivo desse valor é: ", type(dado))
+print("Só em espaços? ", dado.isspace())
+print("É um número? ", dado.isnumeric())
+print("É alfabético? ", dado.isalpha())
+print("É alfanumérico? ", dado.isalnum())
+print("Está em maiúsculas? ", dado.isupper())
+print("Está em minúsculas? ", dado.islower())
+print("Está capitalizada(primeira letra maiúscula)? ", dado.istitle())

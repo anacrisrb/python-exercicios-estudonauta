@@ -10,8 +10,11 @@ print("O seu salário atual é R$ {:.2f}".format(salario))
 
 if salario > 1250:
     aumento = (salario * 10 / 100) + salario
-    print("Com o aumento salarial de 10% você passará a receber R$ {:.2f}".format(aumento))
+    print(
+        "Com o aumento salarial de 10% você passará a receber R$ {:.2f}".format(aumento)
+    )
 else:
-    aumento = (salario * 15 / 100)+ salario
-    print("Com o aumento salarial de 15% você passará a receber R$ {:.2f}".format(aumento))
-
+    aumento = (salario * 15 / 100) + salario
+    print(
+        "Com o aumento salarial de 15% você passará a receber R$ {:.2f}".format(aumento)
+    )

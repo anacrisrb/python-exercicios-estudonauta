@@ -13,4 +13,3 @@ shuffle(alunos)
 
 print("A ordem de apresentação será: ")
 print(alunos)
-

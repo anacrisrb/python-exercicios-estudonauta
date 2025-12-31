@@ -1,5 +1,7 @@
 "Crie um programa que leia um número real qualquer pelo teclado e mostre na tela sua porção inteira."
+
 import math
+
 # trunc = truncate (parte inteira do número)
 
 from math import trunc

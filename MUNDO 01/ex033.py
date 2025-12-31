@@ -23,7 +23,5 @@ print("O maior valor digitado foi:", maior)
 
 # Usando outras funções:
 
-print("O menor valor digitado foi:", min(n1,n2,n3))
-print("O menor valor digitado foi:", max(n1,n2,n3))
-
-
+print("O menor valor digitado foi:", min(n1, n2, n3))
+print("O menor valor digitado foi:", max(n1, n2, n3))

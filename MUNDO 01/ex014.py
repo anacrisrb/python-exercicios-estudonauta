@@ -4,4 +4,4 @@ temperatura = float(input("Informa a temperatura em ºC: "))
 
 conversao = (temperatura * 1.8) + 32
 
-print("A temperatura de {}ºC corresponde a {}ºF!".format(temperatura,conversao))
+print("A temperatura de {}ºC corresponde a {}ºF!".format(temperatura, conversao))
