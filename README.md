@@ -1,9 +1,10 @@
-# Curso de Python - Estudonauta - Mundo 01 🐍
+# Curso de Python - Estudonauta 🐍
 Repositório criado para compartilhar os exercicios resolvidos do curso de Python da plataforma [Estudonauta](https://www.estudonauta.com/), ministrado pelo professor [Gustavo Guanabara](https://github.com/gustavoguanabara)! 
 
 ## 🌍 Conteúdo do curso
 
-Atualmente, este repositório contempla os exercícios do Mundo 01.
+[] Mundo 01
+[] Mundo 02
 
 ## 🛠️ Ferramentas utilizadas
 
