@@ -8,7 +8,8 @@ print("-=-==" * 3)
 print("\033[4;30;41mJOKENPÔ GAMING\033[m")
 print("-=-==" * 3)
 
-print("""OPÇÕES DE JOGO: 
+print(
+    """OPÇÕES DE JOGO: 
 [ 1 ] PEDRA
 [ 2 ] PAPEL
 [ 3 ] TESOURA"""

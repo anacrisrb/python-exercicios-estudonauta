@@ -5,7 +5,7 @@ from time import sleep
 for cont in range(10, -1, -1):
     print(cont)
     sleep(0.5)
-print("-==-"*5)
+print("-==-" * 5)
 print("\033[33mBUM! BUM! BUM! POW!!\033[m\n")
 print("\033[33mFELIZ ANO NOVO!!\033[m")
-print("-==-"*5)
+print("-==-" * 5)
