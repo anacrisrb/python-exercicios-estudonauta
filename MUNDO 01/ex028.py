@@ -3,7 +3,7 @@
 
 # O programa deverá escrever na tela se o usuário venceu ou perdeu.
 
-from random import randint  # Classe/módulo para "sortear" um número
+from random import randint  # Biblioteca para "sortear" um número
 
 from time import sleep  # Biblioteca para simular o procesamento do computador
 

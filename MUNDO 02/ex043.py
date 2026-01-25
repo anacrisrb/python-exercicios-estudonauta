@@ -7,18 +7,19 @@ from sys import float_repr_style
 # 30 até 40: Obesidade
 # Acima de 40: Obesidade mórbida
 
-peso = float(input("Informe o seu peso: "))
-altura = float(input("Informe a sua altura: "))
+peso = float(input("Qual é seu peso? (Kg) "))
+altura = float(input("Qual é sua altura: (m) "))
 
 imc = peso / (altura**2)
+print(f"O seu IMC é de {imc:.1f}")
 
 if imc < 18.5:
-    print("Abaixo do peso")
+    print("Você está ABAIXO DO PESO")
 elif 18.5 <= imc < 25:
-    print("Peso ideal")
+    print("Parabéns, você está na faixa de PESO IDEAL")
 elif 25 <= imc < 30:
-    print("Sobrepeso")
+    print("Você está em SOBREPRESO")
 elif 30 <= imc < 40:
-    print("Obesidade")
+    print("Você está em OBESIDADE")
 else:
-    print("Obesidade mórbida")
+    print("Você está em OBESIDADE MÓRBITA, cuidado")

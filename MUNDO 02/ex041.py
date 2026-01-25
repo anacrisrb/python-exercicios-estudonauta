@@ -3,30 +3,29 @@
 # Até 9 anos: MIRIM
 # Até 14 anos: INFANTIL
 # Até 19 anos: JUNIOR
-# Até 20 anos: SÊNIOR
+# Até 25 anos: SÊNIOR
 # Acima: MASTER
 
 from datetime import date
 
-nasc = int(input("Informe o ano de nascimento do atleta: "))
+nascimento = int(input("Informe o ano de nascimento do atleta: "))
 
 ano_atual = date.today().year
 
-idade = ano_atual - nasc
+idade = ano_atual - nascimento
 
 if idade < 0:
     print("Ano de nascimento inválido. Informe o ano de nascimento correto")
 else:
     print(f"O atleta possui {idade} anos.")
-    print(f"Portanto sua categoria atual é: ")
 
     if idade <= 9:
-        print("MIRIM")
+        print("Classificação: MIRIM")
     elif idade <= 14:
-        print("INFANTIL")
+        print("Classificação: INFANTIL")
     elif idade <= 19:
-        print("JUNIOR")
-    elif idade <= 20:
-        print("SÊNIOR")
+        print("Classificação: JUNIOR")
+    elif idade <= 25:
+        print("Classificação: SÊNIOR")
     else:
-        print("MASTER")
+        print("Classificação: MASTER")

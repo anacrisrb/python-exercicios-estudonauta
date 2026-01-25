@@ -8,11 +8,11 @@ nota1 = float(input("Informe a primeira nota: "))
 nota2 = float(input("Informe a segunda nota: "))
 media = (nota1 + nota2) / 2
 
-print(f"Sua média foi {media:.2f}")
+print(f"A sua primeira nota foi {nota1} média foi {media:.2f}")
 
 if media < 5.0:
     print(f"Aluno \033[1;31mREPROVADO\033[m")
 elif 5.0 <= media <= 6.9:
     print(f"Aluno de \033[1;33mRECUPERAÇÃO\033[m")
-else:
+elif media >= 7:
     print(f"Aluno \033[1;36mAPROVADO\033[m")

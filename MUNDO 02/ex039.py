@@ -9,25 +9,30 @@
 from datetime import date
 
 ano_nasc = int(input("Informe o ano de nascimento: "))
+
 ano_atual = date.today().year
 idade = ano_atual - ano_nasc
 
-if idade < 18:
-    tempo_restante = 18 - idade
-    print(f"A idade mínima para o ALISTAMENTO é 18 anos.")
-    print(
-        f"A sua idade atual é {idade} anos. "
-        f"O seu alistamento obrigatório será daqui {tempo_restante} ano(s)."
-    )
-elif idade == 18:
-    print("A hora de se alistar chegou.")
-elif idade > 18:
-    tempo_ultrapassado = idade - 18
-    print("Você já passou do tempo de alistamento.")
-    print(
-        f"A sua idade atual é {idade} anos. "
-        f"Já se passaram {tempo_ultrapassado} ano(s) do prazo para o alistamento obrigátorio."
-    )
-    print(
-        "\033[1;33mProcure uma unidade de atendimento da JSM para regularizar a sua situação!\033[m"
-    )
+sexo = str(input("Informe o seu sexo [F/M]: ")).upper().strip()[0]
+
+if sexo == "F":
+    print("O alistamento é obrigatório somente para o sexo masculino")
+else:
+    print(f"Quem nasceu em {ano_nasc} tem {idade} anos em {ano_atual}.", end="")
+    print(" A idade para o ALISTAMENTO OBRIGATÓRIO é: 18 anos.")
+
+    if idade == 18:
+        print("Você tem que se alistar IMEDIATAMENTE")
+    elif idade < 18:
+        saldo = 18 - idade
+        print(f"O seu alistamento será daqui {saldo} ano(s).")
+        ano = saldo + ano_atual
+        print(f"O seu alistamento será em {ano}.")
+    else:
+        saldo = idade - 18
+        print(f"Já se passaram {saldo} ano(s) do prazo para o alistamento obrigátorio.")
+        ano = ano_atual - saldo
+        print(f"Você deveria ter se alistado em {ano}.")
+        print(
+            "\033[1;31mProcure uma unidade de atendimento da JSM para regularizar a sua situação!\033[m"
+        )
