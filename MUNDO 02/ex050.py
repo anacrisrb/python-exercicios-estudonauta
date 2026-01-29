@@ -2,11 +2,9 @@
 
 soma = 0
 cont = 0
-for num in range(1,7):
+for num in range(1, 7):
     num1 = int(input("Digite {} número: ".format(num)))
     if num1 % 2 == 0:
         soma += num1
         cont += 1
 print(f"A soma dos {cont} números PARES digitados é {soma}.")
-
-
