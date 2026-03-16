@@ -4,7 +4,7 @@ maior = 0
 menor = 0
 
 for p in range (1,6):
-    peso = float(input(f"Informe o peso da {p}ª pessoa: "))
+    peso = float(input(f"Informe o peso da {p}x pessoa: "))
 
     if p == 1: # Para comparar com os próximos pesos que serão digitados
         maior = peso
