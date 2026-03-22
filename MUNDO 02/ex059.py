@@ -7,4 +7,3 @@
 # [5] Sair do programa
 
 # Seu programa deverá realizar a operação solicitada em cada caso.
-

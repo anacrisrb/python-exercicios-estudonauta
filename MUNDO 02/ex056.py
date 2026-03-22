@@ -9,20 +9,24 @@ homem_mais_velho = " "
 maior_idade_homem = 0
 mulheres_menor_20 = 0
 
-for c in range (1,5):
+for c in range(1, 5):
     print(f"-----{c}ª PESSOA-----")
     nome = str(input(f"Informe o nome da {c}ª pessoa: "))
     idade = int(input(f"Informe a idade da {c}ª pessoa: "))
     sexo = str(input(f"Informe o sexo (F/M) da {c}ª pessoa: ")).upper()
 
-    soma_idade += idade # Somando todas as idades digitadas
+    soma_idade += idade  # Somando todas as idades digitadas
 
     if sexo == "M":
-        if idade > maior_idade_homem: # Comparando a idade do homem atual com a maior já registrada
+        if (
+            idade > maior_idade_homem
+        ):  # Comparando a idade do homem atual com a maior já registrada
             maior_idade_homem = idade
             homem_mais_velho = nome
 
-    if sexo == "F" and idade < 20: # Validando quantidade de mulheres com menos de 20 anos
+    if (
+        sexo == "F" and idade < 20
+    ):  # Validando quantidade de mulheres com menos de 20 anos
         mulheres_menor_20 += 1
 
 media_idade = soma_idade / 4

@@ -12,7 +12,7 @@ ano_atual = date.today().year
 cont_maior = 0
 cont_menor = 0
 
-for c in range(1,8):
+for c in range(1, 8):
     ano_nasc = int(input(f"Informe o ano de nascimento da {c}ª pessoa: "))
     idade = ano_atual - ano_nasc
 
@@ -24,8 +24,3 @@ for c in range(1,8):
 print("-" * 30)
 print(f"{cont_maior} pessoas são maiores de idade.")
 print(f"{cont_menor} pessoas são menores de idade.")
-
-
-
-
-
