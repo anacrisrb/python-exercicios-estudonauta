@@ -1,7 +1,7 @@
 # Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, mostre:
 
 # A média de idade do grupo
-# Qual é o nome do homem mais velho
+# Qual é o nome do homem mais  velho
 # Quantas mulheres têm menos de 20 anos.
 
 soma_idade = 0
@@ -10,11 +10,12 @@ maior_idade_homem = 0
 mulheres_menor_20 = 0
 
 for c in range (1,5):
+    print(f"-----{c}ª PESSOA-----")
     nome = str(input(f"Informe o nome da {c}ª pessoa: "))
     idade = int(input(f"Informe a idade da {c}ª pessoa: "))
     sexo = str(input(f"Informe o sexo (F/M) da {c}ª pessoa: ")).upper()
 
-    soma_idade += idade
+    soma_idade += idade # Somando todas as idades digitadas
 
     if sexo == "M":
         if idade > maior_idade_homem: # Comparando a idade do homem atual com a maior já registrada
@@ -26,6 +27,6 @@ for c in range (1,5):
 
 media_idade = soma_idade / 4
 print()
-print(f"Média de idade do grupo: {media_idade}")
-print(f"Homem mais velho: {homem_mais_velho}")
-print(f"Mulheres com menos de 20 anos: {mulheres_menor_20}")
+print(f"A média de idade do grupo é {media_idade} anos")
+print(f"O homem mais velho tem {maior_idade_homem} anos e se chama {homem_mais_velho}")
+print(f"Ao todo são {mulheres_menor_20} mulheres com menos de 20 anos.")

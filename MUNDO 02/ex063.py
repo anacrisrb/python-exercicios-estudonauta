@@ -1,0 +1,5 @@
+# Escreva um programa que leia um numero n inteiro qualquer e mostre na tela os n primeiros elementos de uma Sequência de Fibonacci.
+
+# Ex: 0 -> 1 -> 1 -> 2 -> 3 -> 5 -> 8
+
+# A sequência de Fibonacci é uma sequência de números em que cada termo (a partir do terceiro) é a soma dos dois anteriores.
