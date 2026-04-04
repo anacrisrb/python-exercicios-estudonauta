@@ -9,10 +9,10 @@ resp = "S"
 
 while resp == "S":
     n = int(input(f"Digite um número: "))
-    cont += 1
-    soma += n
+    cont += 1 # Cont + 1...
+    soma += n #Soma + n...
 
-    if cont == 1:  # Validar a comparação com um unico numero
+    if cont == 1:  # Comparação
         maior = n
         menor = n
     else:
@@ -22,11 +22,11 @@ while resp == "S":
             menor = n
 
     resp = input("Quer continuar? [S/N] ").strip().upper()
-    while resp not in "SN":
-        resp = input(f"Opção inválida. Deseja continuar? [S/N]").strip().upper()
+    while resp not in "SN": # Caso o usuário digite a opçao incorreta
+        resp = input(f"Opção inválida. Deseja continuar? [S/N] ").strip().upper()
 
 media = soma / cont
 
-print("A média entre o números digitados foi {:.0f}".format(media))
-print("O MAIOR valor digitado foi {}".format(maior), end=" ")
+print("A média é igual a: {:.0f}".format(media))
+print("O MAIOR valor digitado foi {}".format(maior), end=" ") # End para não ter salto de linha, apenas quebra e continuação
 print("e o MENOR valor digitado foi {}.".format(menor))
